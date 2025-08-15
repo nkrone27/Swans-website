@@ -1,0 +1,62 @@
+<header class="flex items-center p-4 bg-white shadow">
+  <img src="LOGO_transparent.png" alt="Swan's Plumbing and Air" class="h-20 w-auto mr-4">
+  <h1 class="text-3xl font-bold text-brand-dark">Swan's Plumbing and Air</h1>
+</header>
+
+<section id="contact" class="py-16 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-start">
+      <div>
+        <h2 class="text-3xl font-bold">Request a Quote</h2>
+        <p class="mt-2 text-slate-700">Tell us what you need and we’ll get right back to you.</p>
+        <form id="quoteForm" action="https://formspree.io/f/xldlvkbq" method="POST" class="mt-6 grid gap-4">
+          <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" />
+          <input required name="name" placeholder="Name" class="w-full rounded-xl border border-slate-300 px-4 py-2" />
+          <input required name="phone" type="tel" placeholder="Phone" class="w-full rounded-xl border border-slate-300 px-4 py-2" />
+          <input name="email" type="email" placeholder="Email" class="w-full rounded-xl border border-slate-300 px-4 py-2" />
+          <textarea name="message" rows="4" placeholder="Describe the issue (leak, clog, water heater, etc.)" class="w-full rounded-xl border border-slate-300 px-4 py-2"></textarea>
+          <input type="hidden" name="_subject" value="New Quote Request – Swan's Plumbing and Air" />
+          <input type="hidden" name="_cc" value="swan.plumbing.air@gmail.com" />
+          <button class="rounded-xl bg-brand text-white px-5 py-3 font-semibold hover:bg-brand-dark transition" type="submit">Send Request</button>
+          <p id="formMsg" class="hidden text-sm text-green-700">Thanks! Your request was sent. We’ll call you shortly.</p>
+          <p id="formErr" class="hidden text-sm text-red-600">Hmm, that didn’t send. Please call <a class="underline" href="tel:+19198809271">(919) 880-9271</a>.</p>
+        </form>
+      </div>
+      <div class="bg-white rounded-3xl border border-slate-200 p-6 shadow-sm">
+        <h3 class="text-xl font-semibold">Contact Info</h3>
+        <ul class="mt-4 grid gap-2 text-slate-700">
+          <li><strong>Phone:</strong> <a class="text-brand hover:underline" href="tel:+19198809271">(919) 880-9271</a></li>
+          <li><strong>Email:</strong> <a class="text-brand hover:underline" href="mailto:swan.plumbing.air@gmail.com">swan.plumbing.air@gmail.com</a></li>
+          <li><strong>Hours:</strong> 8am–5pm, 7 days a week</li>
+          <li><strong>Address:</strong> Tampa, FL</li>
+          <li><strong>Website:</strong> <a class="text-brand hover:underline" href="https://swansplumbingair.com">swansplumbingair.com</a></li>
+        </ul>
+      </div>
+    </div>
+</section>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const form = document.getElementById('quoteForm');
+  const ok = document.getElementById('formMsg');
+  const err = document.getElementById('formErr');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    ok.classList.add('hidden');
+    err.classList.add('hidden');
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form)
+      });
+      if (res.ok) {
+        form.reset();
+        ok.classList.remove('hidden');
+      } else {
+        err.classList.remove('hidden');
+      }
+    } catch (_) {
+      err.classList.remove('hidden');
+    }
+  });
+</script>
