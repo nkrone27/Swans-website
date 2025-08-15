@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Swan's Plumbing and Air | Tampa Plumbing & HVAC</title>
+  <meta name="description" content="Swan's Plumbing and Air — 50+ years of experience serving Tampa and surrounding areas. Licensed, insured, fast response for plumbing & HVAC." />
+  <meta property="og:title" content="Swan's Plumbing and Air | Tampa Plumbing & HVAC" />
+  <meta property="og:description" content="Trusted plumbing & HVAC pros in Tampa. Call (919) 880-9271." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://swansplumbingair.com" />
+  <link rel="canonical" href="https://swansplumbingair.com" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ["Inter", "ui-sans-serif", "system-ui"] },
+          colors: {
+            brand: { DEFAULT: 'var(--brand)', dark: 'var(--brand-dark)' },
+            accent: { DEFAULT: 'var(--accent)', dark: 'var(--accent-dark)' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root{
+      --brand:#1DA1DB;        /* from logo drop outline */
+      --brand-dark:#082C43;   /* from swan */
+      --accent:#0e7aa8;       /* secondary */
+      --accent-dark:#0a5a7b;  
+    }
+    html{scroll-behavior:smooth}
+  </style>
+  <link rel="icon" href="/favicon.ico" />
+</head>
+<body class="antialiased text-slate-800">
+  <!-- Top strip -->
+  <div class="bg-brand text-white text-xs">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+      <span>Serving Tampa & surrounding areas • 50+ Years Experience • Licensed & Insured</span>
+      <a href="tel:+19198809271" class="underline">Call: (919) 880-9271</a>
+    </div>
+  </div>
+
+  <!-- Header (Eberson-inspired: centered brand, simple nav) -->
+  <header class="bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col items-center">
+      <a href="#home" class="flex items-center gap-3">
+        <img src="A_vector-based_digital_vector_illustration_feature.png" alt="Swan's Plumbing and Air" class="h-24 w-auto" />
+      </a>
+      <nav class="mt-4 flex items-center gap-6 text-sm">
+        <a href="#services" class="hover:text-brand">Services</a>
+        <a href="#projects" class="hover:text-brand">Projects</a>
+        <a href="#about" class="hover:text-brand">About</a>
+        <a href="#reviews" class="hover:text-brand">Reviews</a>
+        <a href="#contact" class="hover:text-brand">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero: full-width with big CTA -->
+  <section id="home" class="relative">
+    <div class="absolute inset-0">
+      <img src="faucet-8372443_1280.jpg" alt="Faucet install by Swan's" class="w-full h-full object-cover opacity-90" />
+      <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 py-28 md:py-40 text-white">
+      <h1 class="text-4xl md:text-6xl font-extrabold max-w-3xl">Plumbing & Air Experts in Tampa</h1>
+      <p class="mt-4 text-lg md:text-xl max-w-2xl text-white/90">Repairs • Replacements • Remodels • HVAC. Upfront pricing, clean workmanship, fast response.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="tel:+19198809271" class="inline-flex items-center rounded-xl bg-brand px-6 py-3 text-lg font-bold hover:bg-brand-dark transition">📞 Call Now: (919) 880-9271</a>
+        <a href="#contact" class="inline-flex items-center rounded-xl bg-white/10 backdrop-blur px-6 py-3 text-lg font-semibold hover:bg-white/20 transition border border-white/30">Get a Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services highlights (three-up) -->
+  <section id="services" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold">Our Core Services</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl border border-slate-200">
+          <h3 class="text-lg font-semibold">Leak & Pipe Repair</h3>
+          <ul class="mt-2 text-slate-600 list-disc list-inside">
+            <li>Slab, ceiling, and wall leaks</li>
+            <li>Copper, PEX, PVC repairs</li>
+            <li>Water pressure issues</li>
+          </ul>
+        </div>
+        <div class="p-6 rounded-2xl border border-slate-200">
+          <h3 class="text-lg font-semibold">Drain Cleaning</h3>
+          <ul class="mt-2 text-slate-600 list-disc list-inside">
+            <li>Snaking & hydro-jetting</li>
+            <li>Toilets, showers, main lines</li>
+            <li>Camera inspections</li>
+          </ul>
+        </div>
+        <div class="p-6 rounded-2xl border border-slate-200">
+          <h3 class="text-lg font-semibold">Water Heaters & HVAC</h3>
+          <ul class="mt-2 text-slate-600 list-disc list-inside">
+            <li>Tank & tankless installs</li>
+            <li>AC repair & replacements</li>
+            <li>Annual maintenance</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-6">
+        <a href="#contact" class="text-brand font-semibold hover:underline">View all services →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects/Gallery -->
+  <section id="projects" class="py-16 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold">Recent Projects</h2>
+      <p class="mt-2 text-slate-600">Real work from homes and businesses in Tampa.</p>
+      <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <img src="faucet-8372443_1280.jpg" alt="Project 1" class="rounded-2xl border border-slate-200 object-cover w-full h-56" />
+        <img src="faucet-8372443_1280.jpg" alt="Project 2" class="rounded-2xl border border-slate-200 object-cover w-full h-56" />
+        <img src="faucet-8372443_1280.jpg" alt="Project 3" class="rounded-2xl border border-slate-200 object-cover w-full h-56" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About strip -->
+  <section id="about" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-3xl font-bold">50+ Years of Trusted Service</h2>
+        <p class="mt-3 text-slate-600">Locally owned and family-operated. Licensed & insured technicians delivering clean, code-compliant work. We provide clear options and upfront pricing before any job.</p>
+        <ul class="mt-4 text-slate-700 grid gap-2">
+          <li>• Licensed & Insured</li>
+          <li>• 8am–5pm, 7 days a week</li>
+          <li>• Tampa & surrounding areas</li>
+        </ul>
+      </div>
+      <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+        <h3 class="text-xl font-semibold">Need help today?</h3>
+        <p class="mt-2 text-slate-600">Call now or send a quick message and we’ll get right back to you.</p>
+        <div class="mt-4 flex gap-3">
+          <a href="tel:+19198809271" class="rounded-xl bg-brand text-white px-5 py-3 font-semibold hover:bg-brand-dark transition">Call (919) 880-9271</a>
+          <a href="#contact" class="rounded-xl border border-brand text-brand px-5 py-3 font-semibold hover:bg-brand hover:text-white transition">Request a Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews" class="py-16 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold">What Customers Say</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <figure class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+          <blockquote class="text-slate-700">“Showed up fast, explained everything, and priced it fair.”</blockquote>
+          <figcaption class="mt-4 text-sm font-semibold">— J. Martinez</figcaption>
+        </figure>
+        <figure class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+          <blockquote class="text-slate-700">“Installed a tankless same day. Professional crew.”</blockquote>
+          <figcaption class="mt-4 text-sm font-semibold">— R. Nguyen</figcaption>
+        </figure>
+        <figure class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+          <blockquote class="text-slate-700">“Five stars. Will call again for anything plumbing.”</blockquote>
+          <figcaption class="mt-4 text-sm font-semibold">— K. Patel</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-start">
+      <div>
+        <h2 class="text-3xl font-bold">Request a Quote</h2>
+        <p class="mt-2 text-slate-700">Tell us what you need and we’ll get right back to you.</p>
+        <form id="quoteForm" action="https://formspree.io/f/xldlvkbq" method="POST" class="mt-6 grid gap-4">
+          <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" />
+          <input required name="name" placeholder="Name" class="w-full rounded-xl border border-slate-300 px-4 py-2" />
+          <input required name="phone" type="tel" placeholder="Phone" class="w-full rounded-xl border border-slate-300 px-4 py-2" />
+          <input name="email" type="email" placeholder="Email" class="w-full rounded-xl border border-slate-300 px-4 py-2" />
+          <textarea name="message" rows="4" placeholder="Describe the issue (leak, clog, water heater, etc.)" class="w-full rounded-xl border border-slate-300 px-4 py-2"></textarea>
+          <input type="hidden" name="_subject" value="New Quote Request – Swan's Plumbing and Air" />
+          <input type="hidden" name="_cc" value="swan.plumbing.air@gmail.com" />
+          <button class="rounded-xl bg-brand text-white px-5 py-3 font-semibold hover:bg-brand-dark transition" type="submit">Send Request</button>
+          <p id="formMsg" class="hidden text-sm text-green-700">Thanks! Your request was sent. We’ll call you shortly.</p>
+          <p id="formErr" class="hidden text-sm text-red-600">Hmm, that didn’t send. Please call <a class="underline" href="tel:+19198809271">(919) 880-9271</a>.</p>
+        </form>
+      </div>
+      <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm">
+        <h3 class="text-xl font-semibold">Contact Info</h3>
+        <ul class="mt-4 grid gap-2 text-slate-700">
+          <li><strong>Phone:</strong> <a class="text-brand hover:underline" href="tel:+19198809271">(919) 880-9271</a></li>
+          <li><strong>Email:</strong> <a class="text-brand hover:underline" href="mailto:swan.plumbing.air@gmail.com">swan.plumbing.air@gmail.com</a></li>
+          <li><strong>Hours:</strong> 8am–5pm, 7 days a week</li>
+          <li><strong>Address:</strong> Tampa, FL</li>
+          <li><strong>Website:</strong> <a class="text-brand hover:underline" href="https://swansplumbingair.com">swansplumbingair.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 py-8 text-sm text-slate-600 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <img src="A_vector-based_digital_vector_illustration_feature.png" alt="Swan's Plumbing and Air" class="h-8 w-auto" />
+        <span>© <span id="year"></span> Swan's Plumbing and Air • Tampa, FL</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="#services" class="hover:text-brand">Services</a>
+        <a href="#projects" class="hover:text-brand">Projects</a>
+        <a href="#contact" class="hover:text-brand">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Contact AJAX
+    const form = document.getElementById('quoteForm');
+    if (form) {
+      const ok = document.getElementById('formMsg');
+      const err = document.getElementById('formErr');
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        ok.classList.add('hidden');
+        err.classList.add('hidden');
+        try {
+          const res = await fetch(form.action, {
+            method: 'POST', headers: { 'Accept': 'application/json' }, body: new FormData(form)
+          });
+          if (res.ok) { form.reset(); ok.classList.remove('hidden'); } else { err.classList.remove('hidden'); }
+        } catch (_) { err.classList.remove('hidden'); }
+      });
+    }
+  </script>
+</body>
+</html>
