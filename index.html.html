@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Swan's Plumbing and Air | Licensed Plumbing Contractor in Tampa</title>
+  <meta name="description" content="Swan's Plumbing and Air — over 50 years of experience serving Tampa and surrounding areas. Licensed, insured, and offering fast response for leaks, clogs, water heaters, HVAC, and remodels." />
+  <meta name="theme-color" content="#0ea5e9" />
+  <meta property="og:title" content="Swan's Plumbing and Air | Plumbing & HVAC Contractor" />
+  <meta property="og:description" content="50+ years of trusted plumbing & HVAC service in Tampa and surrounding areas. Call (919) 880-9271 today!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://swansplumbingair.com" />
+  <meta property="og:image" content="/og-image.jpg" />
+  <link rel="canonical" href="https://swansplumbingair.com" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ["Inter", "ui-sans-serif", "system-ui"] },
+          colors: { brand: {
+            DEFAULT: "#0ea5e9",
+            dark: "#0284c7",
+          }},
+        }
+      }
+    }
+  </script>
+  <link rel="icon" href="/favicon.ico" />
+</head>
+<body class="antialiased text-slate-800">
+  <!-- Top Bar -->
+  <div class="bg-brand text-white text-sm">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+      <p class="font-medium">50+ Years in the Industry • Licensed & Insured • Free Estimates</p>
+      <a href="tel:+19198809271" class="underline hover:no-underline">Call: (919) 880-9271</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <span class="text-xl font-bold tracking-tight">Swan's Plumbing and Air</span>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#services" class="hover:text-brand">Services</a>
+        <a href="#about" class="hover:text-brand">About</a>
+        <a href="#projects" class="hover:text-brand">Projects</a>
+        <a href="#reviews" class="hover:text-brand">Reviews</a>
+        <a href="#contact" class="hover:text-brand">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden bg-gradient-to-b from-sky-50 to-white text-center">
+    <div class="max-w-5xl mx-auto px-4 py-20">
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+        Plumbing & Air Experts in Tampa & Surrounding Areas
+      </h1>
+      <p class="mt-4 text-lg text-slate-600 mb-8">Over 50 years of combined industry experience. From leaks to HVAC installs—done right the first time with upfront pricing.</p>
+      <a href="tel:+19198809271" class="inline-block text-2xl font-bold bg-brand text-white px-8 py-4 rounded-xl hover:bg-brand-dark transition">📞 Call Now: (919) 880-9271</a>
+      <div class="mt-10">
+        <img src="faucet-8372443_1280.jpg" alt="Elegant faucet installation by Swan's Plumbing and Air" class="mx-auto rounded-3xl shadow-2xl w-full max-w-3xl object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-start">
+      <div>
+        <h2 class="text-3xl font-bold">Request a Quote</h2>
+        <form id="quoteForm" action="https://formspree.io/f/YOUR_ID" method="POST" class="mt-6 grid gap-4">
+          <input required name="name" placeholder="Name" class="w-full rounded-xl border border-slate-300 px-4 py-2" />
+          <input required name="phone" type="tel" placeholder="Phone" class="w-full rounded-xl border border-slate-300 px-4 py-2" />
+          <input name="email" type="email" value="swan.plumbing.air@gmail.com" placeholder="Email" class="w-full rounded-xl border border-slate-300 px-4 py-2" />
+          <button class="rounded-xl bg-brand text-white px-5 py-3 font-semibold hover:bg-brand-dark transition" type="submit">Send Request</button>
+        </form>
+      </div>
+      <div class="bg-white rounded-3xl border border-slate-200 p-6 shadow-sm">
+        <h3 class="text-xl font-semibold">Contact Info</h3>
+        <ul class="mt-4 grid gap-2 text-slate-700">
+          <li><strong>Phone:</strong> <a class="text-brand hover:underline" href="tel:+19198809271">(919) 880-9271</a></li>
+          <li><strong>Email:</strong> <a class="text-brand hover:underline" href="mailto:swan.plumbing.air@gmail.com">swan.plumbing.air@gmail.com</a></li>
+          <li><strong>Hours:</strong> 8am–5pm, 7 days a week</li>
+          <li><strong>Address:</strong> Tampa, FL</li>
+          <li><strong>Website:</strong> <a class="text-brand hover:underline" href="https://swansplumbingair.com">swansplumbingair.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 text-center py-6 text-sm text-slate-500">
+    © <span id="year"></span> Swan's Plumbing and Air. All rights reserved. <a href="https://swansplumbingair.com" class="hover:underline">swansplumbingair.com</a>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
